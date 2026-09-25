@@ -1,1 +1,0 @@
-name: lomash sen, roll_number: 1, course: cse
