@@ -1,14 +1,22 @@
-import pandas as pd 
+import matplotlib.pyplot as plt
 
-df1=pd.DataFrame({
-    "name" : ["AMAN", "RIYA", "POOJA"],
-    "marks" : [80, 70, 90]
-})
+month=["january", "Februry", "march", "april", "may", "june",]
+product=[10, 20, 30, 40, 50, 60]
 
-df2=pd.DataFrame({
-    "name" : ["RAHUL", "ROSHAN", "RAM"],
-    "marks" : [90, 80, 70]
-})
+ax=plt.subplots()
 
-result=pd.concat([df1, df2])
-print(result)
+plt.title("Sales Graph")
+plt.xlabel("month")
+plt.ylabel("product")
+plt.bar(month, product)
+plt.grid()
+fig, ax=plt.subplots(1,1)
+
+
+plt.title("Sales Graph")
+plt.xlabel("month")
+plt.ylabel("product")
+plt.plot(month, product)
+plt.grid()
+fig, ax=plt.subplots(1,2)
+plt.show()
